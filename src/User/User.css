@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container {
+  height: 100vh;
+}
+.navbar {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+.logo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.search {
+  height: 8vh;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2rem;
+}
+.search input {
+  width: 90%;
+  height: 80%;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin-right: 1.5rem;
+  border: 2px solid grey;
+}
+.search .search-icon {
+  display: none;
+}
+.comps a {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.comps a:hover {
+  color: rgba(0, 0, 0, 0.461);
+}
+.icons {
+  display: none;
+}
+.body {
+  height: 85vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box {
+  width: 30%;
+  height: 25vh;
+  margin: 0 0.5rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.info {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.info div {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn1 {
+  border: 2px solid black;
+  width: 60%;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+.btn2 {
+  border: 2px solid black;
+  width: 60%;
+  border-radius: 1rem;
+}
+.btn1 button,
+.btn2 button {
+  padding: 0rem 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-color: green;
+  color: white;
+}
+.btn2:hover {
+  background-color: red;
+  color: white;
+}
+.footer {
+  height: 10rem;
+  width: 100%;
+  background: #000;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 10vh;
+    overflow: visible;
+  }
+  .search {
+    height: 5vh;
+    width: 60vw;
+  }
+  .icons {
+    display: block;
+    font-size: 2rem;
+  }
+  .bar {
+    display: block;
+  }
+  .xmark {
+    display: none;
+  }
+  .comps {
+    z-index: 2;
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: 87%;
+    width: 60%;
+    top: 6.7rem;
+    left: 11rem;
+    display: none;
+  }
+  .comps a {
+    display: block;
+    position: relative;
+    top: 10rem;
+    left: 4rem;
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+  .body {
+    position: relative;
+    left: 1rem;
+    display: block;
+  }
+  .box {
+    width: 90%;
+    height: 20vh;
+    margin: 1rem 0;
+    z-index: 1;
+  }
+  .img {
+    width: 50%;
+  }
+  .info {
+    width: 50%;
+  }
+  .info div {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .box {
+    width: 95vw;
+    height: 15vh;
+    position: relative;
+    right: 1rem;
+  }
+  .comps {
+    left: 9rem;
+  }
+}
